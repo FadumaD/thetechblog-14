@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog </title>
+  <link rel="stylesheet" href="./public/stylesheets/css/style.css">
+</head>
+
+<body>
+    <body>
+    <div class="hero">
+
+        <nav>
+            <img src="Images/Logo.jpeg" class="logo">
+                <ul>
+                   <li><a href="./main.handlebars">Home</a></li>
+                    <li><a href="./dashboard.html">Dashboard</a></li>
+                    <li><a href="#">Sign In</a></li>
+                 </ul>
+        </nav>
+    </div>
+      <nav>
+        {{#if loggedIn}}
+        <a href="/dashboard">dashboard</a>
+        <button id="logout" class="btn-no-style logout">logout</button>
+        {{else}}
+        <a href="/login">login</a>
+        {{/if}}
+      </nav>
+    </header>
+
+    <div class="banner-text">
+            <h1> The Tech Blog </h1>
+            <p> The place to be where coders share. Writing and teching the world how to create, debug and develop applications. </p>
+            <a href="#">SIGN UP</a> {{#if loggedIn}}
+    </div>
+    <main>
+      
+  </div>
+
+  {{#if loggedIn}}
+  <script src="/javascript/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>
