@@ -1,4 +1,4 @@
- ## Note Taker application using Express.j
+ ## Tech Blog MVC
 
 ## Description
 
